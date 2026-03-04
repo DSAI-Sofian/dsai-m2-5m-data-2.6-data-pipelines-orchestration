@@ -1,0 +1,5 @@
+Usage: meltano run [OPTIONS] [BLOCKS]...
+Try 'meltano run --help' for help.
+
+Error: `meltano run` must be run inside a Meltano project.
+Use `meltano init <project_directory>` to create one.

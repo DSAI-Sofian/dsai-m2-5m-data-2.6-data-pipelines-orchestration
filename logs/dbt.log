@@ -1,0 +1,51 @@
+[0m20:02:45.258172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b47410250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b482c88d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b47402f50>]}
+
+
+============================== 20:02:45.264839 | 25036247-ad74-4caa-a2f2-0d767bc56800 ==============================
+[0m20:02:45.264839 [info ] [MainThread]: Running with dbt=1.10.9
+[0m20:02:45.265817 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'empty': 'None', 'fail_fast': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'profiles_dir': '/home/s_sofian/.dbt', 'write_json': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt init resale_flat', 'quiet': 'False', 'warn_error': 'None', 'printer_width': '80', 'log_cache_events': 'False', 'partial_parse': 'True', 'version_check': 'True', 'debug': 'False', 'static_parser': 'True', 'indirect_selection': 'eager'}
+[0m20:02:45.313988 [debug] [MainThread]: Starter project path: /home/s_sofian/miniconda3/envs/elt/lib/python3.11/site-packages/dbt/include/starter_project
+[0m20:02:45.346426 [info ] [MainThread]: 
+Your new dbt project "resale_flat" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:02:45.347436 [info ] [MainThread]: Setting up your profile.
+[0m20:04:41.555383 [info ] [MainThread]: Profile resale_flat written to /home/s_sofian/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:04:41.557284 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 116.41881, "process_in_blocks": "370928", "process_kernel_time": 14.812845, "process_mem_max_rss": "368780", "process_out_blocks": "80", "process_user_time": 12.536696}
+[0m20:04:41.558427 [debug] [MainThread]: Command `dbt init` succeeded at 20:04:41.558247 after 116.42 seconds
+[0m20:04:41.559042 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b4bb91c90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b47443dd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1b4bba3cd0>]}
+[0m20:04:41.559611 [debug] [MainThread]: Flushing usage events
+[0m20:04:42.872257 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:05:51.930653 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7780c09a1390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7780c09c86d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7780c19fd850>]}
+
+
+============================== 20:05:51.935015 | edcdcb72-d350-4cb2-8175-032af8ab1f51 ==============================
+[0m20:05:51.935015 [info ] [MainThread]: Running with dbt=1.10.9
+[0m20:05:51.936222 [debug] [MainThread]: running dbt with arguments {'quiet': 'False', 'no_print': 'None', 'debug': 'False', 'invocation_command': 'dbt debug', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False', 'fail_fast': 'False', 'profiles_dir': '/home/s_sofian/.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'target_path': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'empty': 'None', 'printer_width': '80', 'log_format': 'default', 'introspect': 'True'}
+[0m20:05:51.980028 [info ] [MainThread]: dbt version: 1.10.9
+[0m20:05:51.983304 [info ] [MainThread]: python version: 3.11.14
+[0m20:05:51.984150 [info ] [MainThread]: python path: /home/s_sofian/miniconda3/envs/elt/bin/python
+[0m20:05:51.985049 [info ] [MainThread]: os info: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
+[0m20:06:16.509572 [info ] [MainThread]: Using profiles dir at /home/s_sofian/.dbt
+[0m20:06:16.510270 [info ] [MainThread]: Using profiles.yml file at /home/s_sofian/.dbt/profiles.yml
+[0m20:06:16.511024 [info ] [MainThread]: Using dbt_project.yml file at /home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/dbt_project.yml
+[0m20:06:16.511746 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m20:06:16.512751 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 24.67133, "process_in_blocks": "64", "process_kernel_time": 15.514848, "process_mem_max_rss": "370052", "process_out_blocks": "24", "process_user_time": 12.20671}
+[0m20:06:16.513784 [debug] [MainThread]: Command `dbt debug` failed at 20:06:16.513614 after 24.67 seconds
+[0m20:06:16.514341 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7780c0a21e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7780696ecbd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7780c51f6510>]}
+[0m20:06:16.514868 [debug] [MainThread]: Flushing usage events
+[0m20:06:17.946341 [debug] [MainThread]: An error was encountered while trying to flush usage events

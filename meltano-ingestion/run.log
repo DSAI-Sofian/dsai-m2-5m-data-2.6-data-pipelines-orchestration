@@ -1,0 +1,204 @@
+[2m2026-03-04T03:27:55.989767Z[0m [[32m[1minfo     [0m] [1mEnvironment 'dev' is active   [0m
+[2m2026-03-04T03:27:56.017830Z[0m [[33m[1mwarning  [0m] [1mA new version of Meltano is available (v4.1.2) and you are currently running v4.0.8. For more information, visit: https://docs.meltano.com/getting-started/installation.[0m
+[2m2026-03-04T03:27:56.284092Z[0m [[32m[1minfo     [0m] [1msetup plugin alembic.autogenerate.schemas[0m
+[2m2026-03-04T03:27:56.284563Z[0m [[32m[1minfo     [0m] [1msetup plugin alembic.autogenerate.tables[0m
+[2m2026-03-04T03:27:56.284863Z[0m [[32m[1minfo     [0m] [1msetup plugin alembic.autogenerate.types[0m
+[2m2026-03-04T03:27:56.285065Z[0m [[32m[1minfo     [0m] [1msetup plugin alembic.autogenerate.constraints[0m
+[2m2026-03-04T03:27:56.285260Z[0m [[32m[1minfo     [0m] [1msetup plugin alembic.autogenerate.defaults[0m
+[2m2026-03-04T03:27:56.285655Z[0m [[32m[1minfo     [0m] [1msetup plugin alembic.autogenerate.comments[0m
+[2m2026-03-04T03:27:56.829732Z[0m [[32m[1minfo     [0m] [1mRunning job with name 'dev:tap-github-to-target-bigquery' and run ID '019cb6e3-4fe7-7107-b7c4-6a2a89e09c79'[0m
+[2m2026-03-04T03:27:57.323660Z[0m [[32m[1minfo     [0m] [1mUsing systemdb state backend  [0m
+[2m2026-03-04T03:27:57.326264Z[0m [[33m[1mwarning  [0m] [1mNo state was found, complete import.[0m
+[2m2026-03-04T03:27:58.450463Z[0m [[32m[1minfo     [0m] [1m/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/fs/__init__.py:4: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:27:58.451198Z[0m [[32m[1minfo     [0m] [1m  __import__("pkg_resources").declare_namespace(__name__)  # type: ignore[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:27:58.780093Z[0m [[32m[1minfo     [0m] [1mtap-github v1.26.0, Meltano SDK v0.53.5[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.790064Z[0m [[32m[1minfo     [0m] [1mSkipping parse of env var settings...[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.827418Z[0m [[33m[1mwarning  [0m] [1mThe stream 'stargazers' might conflict with previous implementation. Looking for the older version? Use 'stargazers_rest'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.828305Z[0m [[33m[1mwarning  [0m] [1mThe stream 'stargazers_rest' is deprecated. Please use the Graphql version instead: 'stargazers'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.829700Z[0m [[32m[1minfo     [0m] [1mAdded 'anonymous_contributors' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.830671Z[0m [[32m[1minfo     [0m] [1mAdded 'assignees' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.831369Z[0m [[32m[1minfo     [0m] [1mAdded 'branches' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.832058Z[0m [[32m[1minfo     [0m] [1mAdded 'collaborators' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.832678Z[0m [[32m[1minfo     [0m] [1mAdded 'commit_comments' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.833319Z[0m [[32m[1minfo     [0m] [1mAdded 'commits' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.834088Z[0m [[32m[1minfo     [0m] [1mAdded 'commit_diffs' as child stream to 'commits'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.834832Z[0m [[32m[1minfo     [0m] [1mAdded 'community_profile' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.835532Z[0m [[32m[1minfo     [0m] [1mAdded 'contributors' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.836221Z[0m [[32m[1minfo     [0m] [1mAdded 'dependencies' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.836768Z[0m [[32m[1minfo     [0m] [1mAdded 'dependents' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.837452Z[0m [[32m[1minfo     [0m] [1mAdded 'deployments' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.838063Z[0m [[32m[1minfo     [0m] [1mAdded 'deployment_statuses' as child stream to 'deployments'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.839765Z[0m [[32m[1minfo     [0m] [1mAdded 'discussions' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.841512Z[0m [[32m[1minfo     [0m] [1mAdded 'discussion_categories' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.842038Z[0m [[32m[1minfo     [0m] [1mAdded 'discussion_comments' as child stream to 'discussions'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.842581Z[0m [[32m[1minfo     [0m] [1mAdded 'discussion_comment_replies' as child stream to 'discussions'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.843119Z[0m [[32m[1minfo     [0m] [1mAdded 'events' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.843571Z[0m [[32m[1minfo     [0m] [1mAdded 'issue_comments' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.844012Z[0m [[32m[1minfo     [0m] [1mAdded 'issue_events' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.844483Z[0m [[32m[1minfo     [0m] [1mAdded 'issues' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.844993Z[0m [[32m[1minfo     [0m] [1mAdded 'labels' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.845410Z[0m [[32m[1minfo     [0m] [1mAdded 'languages' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.845843Z[0m [[32m[1minfo     [0m] [1mAdded 'milestones' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.846432Z[0m [[32m[1minfo     [0m] [1mAdded 'pull_request_commits' as child stream to 'pull_requests'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.846935Z[0m [[32m[1minfo     [0m] [1mAdded 'pull_request_commit_diffs' as child stream to 'pull_request_commits'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.847347Z[0m [[32m[1minfo     [0m] [1mAdded 'pull_request_diffs' as child stream to 'pull_requests'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.847807Z[0m [[32m[1minfo     [0m] [1mAdded 'pull_requests' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.848305Z[0m [[32m[1minfo     [0m] [1mAdded 'readme_html' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.848822Z[0m [[32m[1minfo     [0m] [1mAdded 'readme' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.849335Z[0m [[32m[1minfo     [0m] [1mAdded 'releases' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.849930Z[0m [[32m[1minfo     [0m] [1mAdded 'extra_metrics' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.850487Z[0m [[32m[1minfo     [0m] [1mAdded 'review_comment_reactions' as child stream to 'review_comments'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.850987Z[0m [[32m[1minfo     [0m] [1mAdded 'review_comments' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.851539Z[0m [[32m[1minfo     [0m] [1mAdded 'reviews' as child stream to 'pull_requests'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.852039Z[0m [[32m[1minfo     [0m] [1mAdded 'stargazers' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.852574Z[0m [[32m[1minfo     [0m] [1mAdded 'stargazers_rest' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.853072Z[0m [[32m[1minfo     [0m] [1mAdded 'stats_contributors' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.853544Z[0m [[32m[1minfo     [0m] [1mAdded 'tags' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.854028Z[0m [[32m[1minfo     [0m] [1mAdded 'traffic_clones' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.854694Z[0m [[32m[1minfo     [0m] [1mAdded 'traffic_pageviews' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.855122Z[0m [[32m[1minfo     [0m] [1mAdded 'traffic_referral_paths' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.855412Z[0m [[32m[1minfo     [0m] [1mAdded 'traffic_referrers' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.855928Z[0m [[32m[1minfo     [0m] [1mAdded 'workflow_run_jobs' as child stream to 'workflow_runs'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.856491Z[0m [[32m[1minfo     [0m] [1mAdded 'workflow_runs' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.857027Z[0m [[32m[1minfo     [0m] [1mAdded 'workflows' as child stream to 'repositories'[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.858136Z[0m [[33m[1mwarning  [0m] [1mStream descendent 'releases' is selected and its parent 'repositories' does not use inclusive replication keys. Forcing full table replication for 'repositories'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.859657Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'anonymous_contributors'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.860175Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'assignees'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.860645Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'branches'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.861085Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'collaborators'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.861942Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'commit_comments'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.863252Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'commit_diffs'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.864011Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'commits'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.864973Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'community_profile'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.865943Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'contributors'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.867029Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'dependencies'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.867797Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'dependents'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.868395Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'deployment_statuses'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.869034Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'deployments'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.869845Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'discussion_categories'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.870617Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'discussion_comment_replies'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.871364Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'discussion_comments'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.872017Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'discussions'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.872629Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'events'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.873263Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'extra_metrics'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.873842Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'issue_comments'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.874574Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'issue_events'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.875400Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'issues'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.875955Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'labels'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.876416Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'languages'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.876759Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'milestones'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.877100Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'pull_request_commit_diffs'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.877422Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'pull_request_commits'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.877696Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'pull_request_diffs'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.877969Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'pull_requests'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.878358Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'readme'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.878699Z[0m [[32m[1minfo     [0m] [1mSkipping deselected stream 'readme_html'.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.878982Z[0m [[32m[1minfo     [0m] [1mBeginning sync of 'repositories' in full_table mode[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:58.879248Z[0m [[32m[1minfo     [0m] [1mFiltering repository list of 1 repositories across 1 organizations[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:59.700111Z[0m [[32m[1minfo     [0m] [1mSetting initial organization for authenticator: None[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:27:59.703193Z[0m [[33m[1mwarning  [0m] [1m/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/extractors/tap-github/venv/lib/python3.11/site-packages/singer_sdk/streams/rest.py:463: DeprecationWarning: `RESTStream.get_next_page_token` is deprecated and will not be used in a future version of the Meltano Singer SDK. Override `RESTStream.get_new_paginator` instead.
+  paginator = self.get_new_paginator() or SinglePagePaginator()
+[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.153095Z[0m [[32m[1minfo     [0m] [1mMETRIC                        [0m [36mmetric_name[0m=[35mhttp_request_duration[0m [36mmetric_value[0m=[35m0.447502[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.212804Z[0m [[32m[1minfo     [0m] [1mMETRIC                        [0m [36mmetric_name[0m=[35mhttp_request_count[0m [36mmetric_value[0m=[35m1[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.213963Z[0m [[32m[1minfo     [0m] [1mRunning the tap on 1 repositories[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.215102Z[0m [[32m[1minfo     [0m] [1mRunning the tap on 1 repositories[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.324942Z[0m [[32m[1minfo     [0m] [1mUsing thread-based parallelism[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:00.325604Z[0m [[32m[1minfo     [0m] [1mTarget 'target-bigquery' is listening for input from tap.[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:00.712159Z[0m [[32m[1minfo     [0m] [1mMETRIC                        [0m [36mmetric_name[0m=[35mhttp_request_duration[0m [36mmetric_value[0m=[35m0.493816[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.734412Z[0m [[32m[1minfo     [0m] [1mBeginning sync of 'releases' in incremental mode with context: {'org': 'pandas-dev', 'repo': 'pandas', 'repo_id': 858127, 'has_discussions': False}[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.735750Z[0m [[32m[1minfo     [0m] [1mStarting incremental sync with bookmark value: None[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:00.736615Z[0m [[32m[1minfo     [0m] [1mInitializing 'target-bigquery' target sink...[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:00.737363Z[0m [[32m[1minfo     [0m] [1mInitializing target sink for stream 'releases'...[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:01.096290Z[0m [[32m[1minfo     [0m] [1mSetting initial organization for authenticator: None[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:01.948320Z[0m [[32m[1minfo     [0m] [1mMETRIC                        [0m [36mmetric_name[0m=[35mhttp_request_duration[0m [36mmetric_value[0m=[35m0.612303[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:01.953822Z[0m [[33m[1mwarning  [0m] [1mProperties ('immutable', 'updated_at', 'reactions') were present in the 'releases' stream but not found in catalog schema. Ignoring.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:01.959524Z[0m [[33m[1mwarning  [0m] [1mProperties ('immutable', 'updated_at') were present in the 'releases' stream but not found in catalog schema. Ignoring.[0m [36mname[0m=[35mtap-github[0m
+[2m2026-03-04T03:28:02.013365Z[0m [[32m[1minfo     [0m] [1mTraceback (most recent call last):[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.013853Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/bin/target-bigquery", line 12, in <module>[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.014391Z[0m [[32m[1minfo     [0m] [1m    sys.exit(TargetBigQuery.cli())[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.014781Z[0m [[32m[1minfo     [0m] [1m             ^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.015107Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/click/core.py", line 1485, in __call__[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.019955Z[0m [[32m[1minfo     [0m] [1m    return self.main(*args, **kwargs)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.020616Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.021412Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/click/core.py", line 1406, in main[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.022018Z[0m [[32m[1minfo     [0m] [1m    rv = self.invoke(ctx)     [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.022558Z[0m [[32m[1minfo     [0m] [1m         ^^^^^^^^^^^^^^^^     [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.022967Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/click/core.py", line 1269, in invoke[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.023216Z[0m [[32m[1minfo     [0m] [1m    return ctx.invoke(self.callback, **ctx.params)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.023462Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.023705Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/click/core.py", line 824, in invoke[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.023936Z[0m [[32m[1minfo     [0m] [1m    return callback(*args, **kwargs)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.024119Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.024278Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/singer_sdk/target_base.py", line 578, in cli[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.024663Z[0m [[32m[1minfo     [0m] [1m    target.listen(file_input) [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.025009Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/singer_sdk/io_base.py", line 34, in listen[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.025488Z[0m [[32m[1minfo     [0m] [1m    self._process_lines(file_input)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.025837Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/singer_sdk/target_base.py", line 278, in _process_lines[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.026161Z[0m [[32m[1minfo     [0m] [1m    counter = super()._process_lines(file_input)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.026610Z[0m [[32m[1minfo     [0m] [1m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.026944Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/singer_sdk/io_base.py", line 78, in _process_lines[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.027301Z[0m [[32m[1minfo     [0m] [1m    self._process_schema_message(line_dict)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.027586Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/singer_sdk/target_base.py", line 378, in _process_schema_message[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.028284Z[0m [[32m[1minfo     [0m] [1m    _ = self.get_sink(        [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.029458Z[0m [[32m[1minfo     [0m] [1m        ^^^^^^^^^^^^^^        [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.030022Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/target_bigquery/target.py", line 532, in get_sink[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.030618Z[0m [[32m[1minfo     [0m] [1m    return self.add_sink(stream_name, schema, key_properties)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.030994Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.031320Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/singer_sdk/target_base.py", line 240, in add_sink[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.031667Z[0m [[32m[1minfo     [0m] [1m    sink = sink_class(        [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.031987Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^        [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.032292Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/target_bigquery/batch_job.py", line 110, in __init__[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.032670Z[0m [[32m[1minfo     [0m] [1m    super().__init__(*args, **kwargs)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.032970Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/target_bigquery/core.py", line 329, in __init__[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.033307Z[0m [[32m[1minfo     [0m] [1m    created = self.create_target(key_properties=key_properties)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.033859Z[0m [[32m[1minfo     [0m] [1m              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.034584Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 336, in wrapped_f[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.035397Z[0m [[32m[1minfo     [0m] [1m    return copy(f, *args, **kw)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.036150Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.036914Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 475, in __call__[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.037649Z[0m [[32m[1minfo     [0m] [1m    do = self.iter(retry_state=retry_state)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.038129Z[0m [[32m[1minfo     [0m] [1m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.038851Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 376, in iter[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.039643Z[0m [[32m[1minfo     [0m] [1m    result = action(retry_state)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.040494Z[0m [[32m[1minfo     [0m] [1m             ^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.041216Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 398, in <lambda>[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.042005Z[0m [[32m[1minfo     [0m] [1m    self._add_action_func(lambda rs: rs.outcome.result())[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.042627Z[0m [[32m[1minfo     [0m] [1m                                     ^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.043247Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/miniconda3/envs/elt/lib/python3.11/concurrent/futures/_base.py", line 449, in result[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.043940Z[0m [[32m[1minfo     [0m] [1m    return self.__get_result()[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.044352Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.044707Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/miniconda3/envs/elt/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.045237Z[0m [[32m[1minfo     [0m] [1m    raise self._exception     [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.045820Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/tenacity/__init__.py", line 478, in __call__[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.046729Z[0m [[32m[1minfo     [0m] [1m    result = fn(*args, **kwargs)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.048329Z[0m [[32m[1minfo     [0m] [1m             ^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.049166Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/target_bigquery/core.py", line 494, in create_target[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.049971Z[0m [[32m[1minfo     [0m] [1m    is_created = self.table.create_table(self.client, self.apply_transforms, **kwargs)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.050394Z[0m [[32m[1minfo     [0m] [1m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.050673Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/target_bigquery/core.py", line 191, in create_table[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.050943Z[0m [[32m[1minfo     [0m] [1m    self._dataset = client.create_dataset([0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.051183Z[0m [[32m[1minfo     [0m] [1m                    ^^^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.051424Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py", line 711, in create_dataset[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.051705Z[0m [[32m[1minfo     [0m] [1m    api_response = self._call_api([0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.051976Z[0m [[32m[1minfo     [0m] [1m                   ^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.052152Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/cloud/bigquery/client.py", line 861, in _call_api[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.052378Z[0m [[32m[1minfo     [0m] [1m    return call()             [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.052611Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^             [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.052926Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 294, in retry_wrapped_func[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.053339Z[0m [[32m[1minfo     [0m] [1m    return retry_target(      [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.053650Z[0m [[32m[1minfo     [0m] [1m           ^^^^^^^^^^^^^      [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.053926Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 156, in retry_target[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.054095Z[0m [[32m[1minfo     [0m] [1m    next_sleep = _retry_error_helper([0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.054431Z[0m [[32m[1minfo     [0m] [1m                 ^^^^^^^^^^^^^^^^^^^^[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.054769Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/api_core/retry/retry_base.py", line 216, in _retry_error_helper[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.055163Z[0m [[32m[1minfo     [0m] [1m    raise final_exc from source_exc[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.055582Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/api_core/retry/retry_unary.py", line 147, in retry_target[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.056223Z[0m [[32m[1minfo     [0m] [1m    result = target()         [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.056870Z[0m [[32m[1minfo     [0m] [1m             ^^^^^^^^         [0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.057435Z[0m [[32m[1minfo     [0m] [1m  File "/home/s_sofian/dsai/module_02/dsai-m2-5m-data-2.6-data-pipelines-orchestration/meltano-ingestion/.meltano/loaders/target-bigquery/venv/lib/python3.11/site-packages/google/cloud/_http/__init__.py", line 494, in api_request[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.057885Z[0m [[32m[1minfo     [0m] [1m    raise exceptions.from_http_response(response)[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.058445Z[0m [[32m[1minfo     [0m] [1mgoogle.api_core.exceptions.Forbidden: 403 POST https://bigquery.googleapis.com/bigquery/v2/projects/project-93ce72dd-0a39-4d93-bf5/datasets?prettyPrint=false: Access Denied: Project project-93ce72dd-0a39-4d93-bf5: User does not have bigquery.datasets.create permission in project project-93ce72dd-0a39-4d93-bf5.[0m [36mname[0m=[35mtarget-bigquery[0m
+[2m2026-03-04T03:28:02.352775Z[0m [[31m[1merror    [0m] [1mLoader failed                 [0m
+[2m2026-03-04T03:28:02.353292Z[0m [[31m[1merror    [0m] [1mBlock run completed           [0m
+[2m2026-03-04T03:28:02.354774Z[0m [[32m[1minfo     [0m] [1mRun completed                 [0m
